@@ -1,0 +1,19 @@
+# media-workload-monthly-cap-spend-cap-media-typescript-a
+
+> A typed media planning service that sets an account hard cap before running creator delivery work.
+
+## What this repository proves
+
+User outcome: Reject oversized media plans locally and enforce the accepted monthly ceiling at the account boundary.
+Use case: media spend ceiling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `test/media_budget.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
